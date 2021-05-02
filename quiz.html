@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scroll Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="./imagem/favicon.ico" type="image/x-icon" content="width=device-width, initial-scale=1.0" >
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+   
+    <!-- Barra de nav -->
+    <nav class="navbar">
+      <div class="navbar__container">
+       <a href="index.html" id="navbar__logo">Livraria Mendís</a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="index.html" class="navbar__links" id="home-page">Index</a>
+          </li>
+          <li class="navbar__item">
+            <a href="origem.html" class="navbar__links" id="about-page">Origem</a>
+          </li>
+          <li class="navbar__item">
+            <a href="livros.html" class="navbar__links" id="services-page">Livros</a>
+          </li>
+          <li class="navbar__item">
+            <a href="referencias.html" class="navbar__links" id="services-page">Referências</a>
+          </li>
+          <li class="navbar__btn">
+            <a href="quiz.html" class="button" id="signup">Quiz</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  
+<main class="formulario">
+  <div>
+    <br>
+    <h1> Sua experiência </h1>
+    <br>
+    <p> Complete as suas informações</p>
+    <br>
+  </div>
+
+  <form>
+    <fieldset class="grupo">
+      <div >
+        <label for="nome"><strong>Nome:</strong></label>
+        <input type="text" name="nome" id="nome" required>
+      </div>
+      <br>
+      <div>
+        <label for="sobrenome"><strong>Sobrenome:</strong></label>
+        <input type="text" name="sobrenome" id="sobrenome" required>
+      </div>
+      <div>
+        <br>
+        <label for="email"><strong>Email:</strong></label>
+        <input type="email" name="email" id="email" required>
+      </div>
+    </fieldset>
+
+
+    <div class="campo">
+      <br><br>
+      <label><strong>Qual seu estilo?</strong></label>
+      <br>
+
+      <label>
+        <input type="radio" name="livro" id="clássicos" checked>Clássicos
+      </label>
+
+      <label>
+        <input type="radio" name="livro" id="darkside"> Darkside
+      </label>
+
+      <label>
+      <input type="radio" name="livro" id="dois"> Os dois
+      <br><br>
+      </label>
+    </div>
+
+    <div class="campo">
+      <br>
+      <label for="filiciação"><strong>A quanto tempo é cliente da Mendís?</strong></label>
+      <select id="filiciação">
+        <option selected disabled value=""> Selecione</option>
+        <option>Menos de 1 ano</option>
+        <option>De 1 a 3   anos</option>
+        <option>De 4 a 8 anos</option>
+        <option>De 9 a 25 anos</option>
+        <option> Mais de 25 anos</option>
+      </select>
+    </div>
+
+      <br>
+
+    <fieldset class="grupo">
+      <div id="check">
+        <label><strong>Quais dos nossos Best-Sellers você mais gostou?</strong></label>
+        <br> <br>
+        <input type="checkbox" id="livro1" name="livro1" value="alice">
+        <label for="livro1">Alice no País das Maravilhas</label>
+         <input type="checkbox" id="livro2" name="livro2" value="bomdiaV">
+        <label for="livro2"> Bom dia, Verônica</label>
+        <input type="checkbox" id="livro3" name="livro3" value="alienista">
+        <label for="livro3">O Alienista</label>
+        <input type="checkbox" id="livro4" name="livro4" value="anoitedotigre">
+        <label for="livro4">A noite do tigre</label>
+        <input type="checkbox" id="livro5" name="livro5" value="mindhinter">
+        <label for="livro5">Mindhunter Profile</label>
+
+      </div>
+    </fieldset>
+
+    <div class="campo">
+      <br>
+      <label><strong>Conte um pouco da sua  experiência</strong></label>
+      <textarea style="26em" id="experiencia" name="experiencia"></textarea>
+    </div>
+    <br>
+    <button class="main__btn" style="font-size:1.3em;"><a href="#">Concluído</a></button>
+  </form>
+  <br>
+</main>
+
+</body>
+</html>

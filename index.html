@@ -1,0 +1,155 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scroll Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="./imagem/favicon.ico" type="image/x-icon" content="width=device-width, initial-scale=1.0" >
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+   
+    <!-- Barra de nav -->
+    <nav class="navbar">
+      <div class="navbar__container">
+       <a href="index.html" id="navbar__logo">Livraria Mendís</a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="index.html" class="navbar__links" id="home-page">Index</a>
+          </li>
+          <li class="navbar__item">
+            <a href="origem.html" class="navbar__links" id="about-page">Origem</a>
+          </li>
+          <li class="navbar__item">
+            <a href="livros.html" class="navbar__links" id="services-page">Livros</a>
+          </li>
+          <li class="navbar__item">
+            <a href="referencias.html" class="navbar__links" id="services-page">Referências</a>
+          </li>
+          <li class="navbar__btn">
+            <a href="quiz.html" class="button" id="signup">Quiz</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Livros -->
+    <div class="hero" id="home">
+      <div class="hero__container">
+        <h1 class="hero__heading">Escolha o melhor <span>gênero </span><span>literário</span> para você!</h1>
+        <p class="hero__description">Venha conhecer o nosso universo</p>
+        <button class="main__btn"><a href="livros.html">Livros</a></button>
+      </div>
+    </div>
+
+    <!-- origem -->
+    <div class="main" id="about">
+      <div class="main__container">
+        <div class="main__img--container">
+          <div class="main__img--card"><i class="fas fa-layer-group"></i></div>
+        </div>
+        <div class="main__content">
+          <h1>Quem somos?</h1>
+          <h2>Somos uma livraria feita para pessoas curiosas e fantásticas</h2>
+          <p>Venha conhecer a nossa origem!</p>
+          <button class="main__btn"><a href="origem.html">Origem</a></button>
+        </div>
+      </div>
+    </div>  
+       
+
+    <!-- Mais vendidos -->
+    <div class="services" id="services">
+      <div class="main__img--container">
+          <img src = "imagem/misterios.png" alt = "Post com livros de Suspense">    
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      <h1>Nossos queridinhos</h1>
+      <div class="services__wrapper">
+        <div class="services__card">
+          <h2>Suspense</h2>
+          <p>Prepare a pipoca e pegue o seu livro!</p>
+          <div class="services__btn"><button><a href="livros.html" style="color:white;text-decoration-line: none">Compre agora</a></button></div>
+        </div>
+        <div class="services__card">
+          <h2>Clássicos</h2>
+          <p>São clássicos por um motivo: nunca saem de moda!</p>
+          <div class="services__btn"><button><a href="livros.html" style="color:white;text-decoration-line: none">Compre agora</a></button></div>
+        </div>
+        <div class="services__card">
+          <h2>Fantasia</h2>
+          <p>Se perca nesse universo com a gente!</p>
+          <div class="services__btn"><button><a href="livros.html" style="color:white;text-decoration-line: none">Compre agora</a></button></div>
+        </div>
+        <div class="services__card">
+          <h2>Investigação</h2>
+          <p>Se achando Sherlock Holemes? Então embarque nessa!</p>
+          <div class="services__btn"><button><a href="livros.html" style="color:white;text-decoration-line: none">Compre agora</a></button></div>
+                   
+        </div>
+      </div>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+        <div class="main__img--container">
+        <img src = "imagem/classicos.png" alt = "Post de propaganda dos livros clássicos">    
+        </div>
+    </div>
+
+
+
+
+
+    <!-- referencias-->
+    <div class="main" id="about">
+      <div class="main__container">
+        <div class="main__img--container">
+          <div class="main__img--card"><i class="fas fa-layer-group"></i></div>
+        </div>
+        <div class="main__content">
+          <h1>Referências</h1>
+          <p>Nossas inspirações!</p>
+          <button class="main__btn"><a href="referencias.html">Referência</a></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Leva para a página do Quiz -->
+    <div class="main" id="sign-up">
+      <div class="main__container">
+        <div class="main__content">
+          <h1>Gostou do nosso site novo?</h1>
+          <h2>Faça um Feedback</h2>
+          <p>Venha nos fazer feliz!</p>
+          <button class="main__btn"><a href="quiz.html">Quiz</a></button>
+        </div>
+        <div class="main__img--container">
+          <div class="main__img--card" id="card-2">
+            <i class="fas fa-users"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="app.js"></script>
+  </body>
+</html>
