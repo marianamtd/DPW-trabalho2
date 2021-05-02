@@ -55,3 +55,56 @@ const hideMobileMenu = () => {
 menuLinks.addEventListener('click', hideMobileMenu);
 navLogo.addEventListener('click', hideMobileMenu);
 
+// carousel
+var slides = document.querySelectorAll('.slide');
+var botaos = document.querySelectorAll('.botao');
+let currentSlide = 1;
+
+//js para nav da imagem manual
+var manualNav = function(manual){
+  slides.forEach((slide) => {
+    slide.classList.remove('active');
+
+    botaos.forEach((botao) => {
+      botao.classList.remove('active');
+    });
+  });
+
+  slides[manual].classList.add('active');
+  botaos[manual].classList.add('active');
+}
+
+botaos.forEach((botao, i) => {
+  botao.addEventListener("click", () =>{
+    manualNav(i);
+    currentSlide = i;
+  });
+});
+
+//imagem do carousel passar sozinha
+var repeat = function(activeClass){
+  let active = document.getElementsByClassName('active');
+  let i = 1;
+
+  var repeater = () => {
+    setTimeout(function(){
+      [...active].forEach((activeSlide) => {
+        activeSlide.classList.remove('active');
+      });
+    slides[i].classList.add('active');
+    botaos[i].classList.add('active');
+    i++;
+
+    if(slides.length == i){
+      i = 0;
+    }
+    if(i >= slides.length){
+      return;
+    }
+
+    repeater();
+    }, 10000);
+  }
+  repeater();
+}
+repeat();
