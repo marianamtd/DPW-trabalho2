@@ -13,6 +13,43 @@
       integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
       crossorigin="anonymous"
     />
+
+<style>
+  #clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 130vh;
+  margin-top: 10px;
+  max-widith: 50vh;
+  background-image: linear-gradient(
+      to right,
+      rgba(255, 0, 0, 0.5),
+      rgba(0, 0, 255, 0.5)
+    ),
+    url(time.jpg);
+  background-size: cover;
+  overflow: hidden;
+}
+
+ #clock2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 150vh;
+  background-image: linear-gradient(
+      to right,
+      rgba(255, 0, 0, 0.5),
+      rgba(0, 0, 255, 0.5)
+    ),
+    url(time.jpg);
+  //background-size: cover;
+
+  overflow: hidden;
+}
+
+
+</style>
   </head>
   <body>
    
@@ -153,7 +190,65 @@
       </div>
     </div>
 
-     <!--Carousel-->
+
+<!-- Timer -->
+
+<div id="clock">
+         <div class="main__img--container">
+             <div class="img-slider">
+      <div class="slide active">
+        <img src="imagem/a-noite-do-tigre.jpg" alt="A noite do tigre">
+      </div>
+        <div class="slide">
+        <img src="imagem/alice-classic-edition.jpg" alt="Alice no País das Maravilhas">
+      </div>
+        <div class="slide">
+        <img src="imagem/a-noiva-fantasma-.jpg" alt="A noiva fantasma">
+      </div>
+            <div class="slide">
+        <img src="imagem/bom-dia-veronica.png" alt="Bom dia Verônica">
+      </div>
+      <div class="navigation">
+        <div class="botao active"></div>
+        <div class="botao"></div>
+        <div class="botao"></div>
+        <div class="botao"></div>
+      </div>
+    </div>
+        </div>
+      <h2>The Time is Now:</h2>
+      <div id="time">
+        <div><span id="hour">00</span> <span>Hours</span></div>
+        <div><span id="minutes">00</span> <span>Minutes</span></div>
+        <div><span id="seconds">00</span> <span>Seconds</span></div>
+      </div>
+    
+    </div>
+    <script type="text/javascript">
+      function clock() {
+        var hours = document.getElementById('hour');
+        var minutes = document.getElementById('minutes');
+        var seconds = document.getElementById('seconds');
+
+        var h = new Date().getHours();
+        var m = new Date().getMinutes();
+        var s = new Date().getSeconds();
+
+        hours.innerHTML = h;
+        minutes.innerHTML = m;
+        seconds.innerHTML = s;
+      }
+      var interval = setInterval(clock, 1000);
+    </script>
+
+
+     <!--Carousel
+      
+    <div id="clock2">
+
+
+      
+
     <div class="img-slider">
       <div class="slide active">
         <img src="imagem/a-noite-do-tigre.jpg" alt="A noite do tigre">
@@ -174,8 +269,9 @@
         <div class="botao"></div>
       </div>
     </div>
+    </div>
 
-
+-->
     
     <script type="text/javascript" src="app.js">
     </script>
