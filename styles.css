@@ -300,7 +300,7 @@ body{
 }
 
 .main__content h1 {
-  font-size: 2rem;
+  font-size: 3rem;
   background-color: #fe3b6f;
     background-image: linear-gradient(to right, #fffb00 0%, #f7673c 100%);
   background-size: 100%;
@@ -990,7 +990,7 @@ text-align: center auto ;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.4em;
-  font-size: 1em;
+  font-size: 1.5em;
 }
 
 #clock #time {
