@@ -869,11 +869,10 @@ text-align: center auto ;
 
 .img-slider{
   position: relative;
-  width: 500px;     //talvez mudar 
-  height: 300px;
+  width: 400px;     //talvez mudar 
+  height: 270px;
   margin: auto;
   background: #131313;
- 
 
 }
 
@@ -1006,8 +1005,8 @@ text-align: center auto ;
 #clock #time div span {
   position: relative;
   display: block;
-  width: 150px;
-  height: 120px;
+  width: 100px;
+  height: 90px;
   background: #2196f3;
   color: #fff;
   font-weight: 300;
@@ -1021,7 +1020,7 @@ text-align: center auto ;
 }
 
 #clock #time div span:nth-child(2) {
-  height: 30px;
+  height: 20px;
   font-size: 0.7em;
   letter-spacing: 0.2em;
   font-weight: 500;

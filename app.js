@@ -108,3 +108,9 @@ var repeat = function(activeClass){
   repeater();
 }
 repeat();
+
+//cor de background 
+var date = new Date();
+if (5 == month && 13 == day) {
+    document.body.style.backgroundColor = "#fffb00";
+}

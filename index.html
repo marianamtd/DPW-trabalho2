@@ -19,7 +19,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 130vh;
+  min-height: 600px;
   margin-top: 10px;
   max-widith: 50vh;
   background-size: 100px autopx;
@@ -94,7 +94,11 @@
     <!-- Mais vendidos -->
     <div class="services" id="services">
       <div class="main__img--container">
-          <img src = "imagem/misterios.png" alt = "Post com livros de Suspense">    
+        <picture>
+          <source media="(max-width:750px )" srcset="imagem/misterios300.png" type="image/png">
+          <source media="(max-width:1050px )" srcset="imagem/misterios600.png" type="image/png">  
+          <img src="imagem/misterios.png" alt="Imagem flexível">
+        </picture>  
         </div>
         <br>
         <br>
@@ -133,7 +137,12 @@
           <br>
           <br>
         <div class="main__img--container">
-        <img src = "imagem/classicos.png" alt = "Post de propaganda dos livros clássicos">    
+        <picture>
+          <source media="(max-width:750px )" srcset="imagem/classicos300.png" type="image/png">
+          <source media="(max-width:1050px )" srcset="imagem/classicos600.png" type="image/png">  
+          <img src="imagem/classicos.png" alt="Imagem flexível">
+        </picture>  
+        </div>    
         </div>
     </div>
 
@@ -178,9 +187,9 @@
 
 <!-- Timer -->
 
-<div id="clock">
-         <div class="main__img--container">
-             <div class="img-slider">
+<div id="clock"> 
+  <div class="main__img--container" style="width: 407px; height: 230px;">
+    <div class="img-slider">
       <div class="slide active">
         <img src="imagem/a-noite-do-tigre.jpg" alt="A noite do tigre">
       </div>
@@ -190,7 +199,7 @@
         <div class="slide">
         <img src="imagem/a-noiva-fantasma-.jpg" alt="A noiva fantasma">
       </div>
-            <div class="slide">
+      <div class="slide">
         <img src="imagem/bom-dia-veronica.png" alt="Bom dia Verônica">
       </div>
       <div class="navigation">
@@ -204,16 +213,15 @@
         </div>
       <h2>Promoções Limitadas:</h2>
       
-      <div id="time">
-        
-        <div><span id="hour">00</span> <span>Hours</span></div>
-        <div><span id="minutes">00</span> <span>Minutes</span></div>
-        <div><span id="seconds">00</span> <span>Seconds</span></div>
-      </div>
-    
+      <div id="time" style="height: 60px;">
+        <p id="demo" style="text-align: center; font-size: 40px; margin-top: 0px;   color: #fff;"></p>
+         
     </div>
+
+    
+
     <script type="text/javascript">
-      function clock() {
+      /*function clock() {
         var hours = document.getElementById('hour');
         var minutes = document.getElementById('minutes');
         var seconds = document.getElementById('seconds');
@@ -226,9 +234,34 @@
         minutes.innerHTML = m;
         seconds.innerHTML = s;
       }
-      var interval = setInterval(clock, 1000);
-    </script>
+      var interval = setInterval(clock, 1000); */
+  var countDownDate = new Date("Jun 1, 2021 15:37:25").getTime();
+  var x = setInterval(function() {
+
+  // dia de hj
+  var now = new Date().getTime();
     
+  var distance = countDownDate - now;
+    
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+    </script> 
+    
+  
+
     <script type="text/javascript" src="app.js">
     </script>
 
