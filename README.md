@@ -2,11 +2,22 @@
 
 Trabalho da disciplina de DPW (Desenvolvimento de Páginas Web) utilizando HTML, CSS e JavaScript.
 A Livraria Mendís foi inspirada nas livrarias Darkside e Travessa. Foram criandas 5 páginas principais (Index, Origem, Livros, Referências e Quiz)
+#
 
 <p align="center">
   <img src="livrariamendis-gif.gif">
 <p align="center">
   <img src="livrariamendis2-gif.gif">
+ 
+ ## Participantes:
+* Mariana Mendonça 
+[Acesse o Github de Mariana](https://github.com/marianamtd)
+* Clara Thaís 
+[Acesse o Github da Clara](https://github.com/Clarathms)
+
+---
+### Atenção
+Todos os direitos autorais das imagens são pertencentes aos donos delas
 
 
 
