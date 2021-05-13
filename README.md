@@ -2,4 +2,4 @@
 Segundo trabalho da disciplina DPW (Desenvolvimento de Páginas Web).
 
 <p align="center">
-  <img src="ezgif.com-gif-maker.gif">
+  <img src="livrariamendis-gif.gif">
