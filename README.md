@@ -1,7 +1,7 @@
 # Livraria Mendís📚
 
 Trabalho da disciplina de DPW (Desenvolvimento de Páginas Web) utilizando HTML, CSS e JavaScript.
-A Livraria Mendís foi inspirada nas livrarias Darkside e Travessa. Foram criandas 5 páginas principais (Index, Origem, Livros, Referências e Quiz)
+A Livraria Mendís foi inspirada nas livrarias Darkside e Travessa. Foram criadas 5 páginas principais (Index, Origem, Livros, Referências e Quiz)
 #
  ## Participantes 👩‍💻👩‍💻:
 * Mariana Mendonça 
